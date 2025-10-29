@@ -154,7 +154,7 @@ const [fileBoxHovered, setFileBoxHovered] = useState(false);
     formData.append('files', file);
 
     try {
-      const res = await fetch('http://localhost:8000/upload/', {
+      const res = await fetch('https://document-parsing-backend-production.up.railway.app/upload/', {
         method: 'POST',
         body: formData,
       });
